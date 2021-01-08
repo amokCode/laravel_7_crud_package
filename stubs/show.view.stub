@@ -14,6 +14,8 @@
 
         $('.contenu').load($(this).attr('href'))
     });
+
+    window.history.pushState('data', 'show', "{{ route('{{ modelVariable }}.show', $test->id) }}")
 </script>
 @endsection
 

@@ -86,6 +86,8 @@
 @section('script')
     <script src="{{ asset('assets/js/excel-bootstrap-table-filter-bundle.min.js') }}"></script>
     <script>
+        window.history.pushState('data', 'index', '{{ route('{{ modelVariable }}.index') }}')
+
         $('#table').excelTableFilter();
 
         // Cache le bouton btn-delete-all

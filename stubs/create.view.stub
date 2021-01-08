@@ -12,5 +12,7 @@
 
         $('.contenu').load($(this).attr('href'))
     });
+
+    window.history.pushState('data', 'create', '{{ route('{{ modelVariable }}.create') }}')
 </script>
 @endsection

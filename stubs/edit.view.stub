@@ -13,6 +13,8 @@
         console.log('link:' + $(this).attr('href'))
 
         $('.contenu').load($(this).attr('href'))
+
+        window.history.pushState('data', 'edit', "{{ route('{{ modelVariable }}.edit', $test->id) }}")
     });
 </script>
 @endsection
